@@ -78,3 +78,49 @@ const arrowMull = (x,y) =>{
 
 
 console.log(arrowMull(10,6));
+
+console.log("something");
+
+
+const helloArrow = ()=>
+    console.log("Hello Wrold")
+
+
+
+
+
+helloArrow()
+
+
+
+
+console.log("****************************----functions practice on function------>CP2x");
+
+
+function returnVowelsFromStirng(value){
+    let vc = 0
+    for(let i= 0;i <value.length; i++){
+        if(value[i] ==='A' ||value[i] ==='E' ||value[i] ==='I' ||value[i] ==='O' ||value[i] ==='U' || value[i] ==='a' ||value[i] ==='e' ||value[i] ==='i' ||value[i] ==='i' ||value[i] ==='u' ){
+            vc++;
+        }
+    }
+    return vc
+}
+
+
+const  vowelCountUsingArrow= (value)=>{
+    let vc = 0
+    for(let i= 0;i <value.length; i++){
+        if(value[i] ==='A' ||value[i] ==='E' ||value[i] ==='I' ||value[i] ==='O' ||value[i] ==='U' || value[i] ==='a' ||value[i] ==='e' ||value[i] ==='i' ||value[i] ==='i' ||value[i] ==='u' ){
+            vc++;
+        }
+    }
+    return vc
+}
+
+let numberOfVowelss = returnVowelsFromStirng("Akshat");
+console.log("Using normal functions:", numberOfVowelss);
+
+
+let numberOfVowelss1 = vowelCountUsingArrow("Akshat");
+console.log("Using arrow functions:", numberOfVowelss1);
