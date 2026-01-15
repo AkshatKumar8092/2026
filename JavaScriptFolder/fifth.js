@@ -70,3 +70,11 @@ const sumFunctionWithArrowFucntion = (num1, num2)=>{
 
 
 console.log(arrowSum(102,2))
+
+
+const arrowMull = (x,y) =>{
+    return x*y;
+}
+
+
+console.log(arrowMull(10,6));
