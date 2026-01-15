@@ -70,4 +70,89 @@ for(let i in marksArr2){
 }
 
 
+console.log("****************************----Arrays using loops excercis------>CP5x");
 
+
+// find the average marks of the studen Marks arrays
+
+let marksArrayEx1 = [ 2,35,76,23,98,66,88,76];
+let sum1 = 0
+let sum2 = 0
+for(let markOfAStudent in marksArrayEx1){
+    sum1+=parseInt(markOfAStudent);
+}
+
+// for in loops makes the iterables into stirng so parse int is requred to conver the marks form stirng to int
+
+for(let markOfAStudent of marksArrayEx1){
+    sum2+=markOfAStudent;
+}
+
+
+console.log(`total sum of marks array is ${sum1}`);
+console.log(`Average of the marksArray is ${sum1/marksArrayEx1.length}`);
+
+
+
+console.log(`total sum of marks array is ${sum2}`);
+console.log(`Average of the marksArray is ${sum2/marksArrayEx1.length}`);
+
+
+
+
+// reduce the 10% ofr the current price
+let itemPrice = [250, 645, 300, 900, 50];
+
+for(let i=0; i<itemPrice.length; i++){
+    let currentPrice = itemPrice[i];
+    let tenPecentOff = currentPrice*0.1;
+    itemPrice[i] = itemPrice[i] -tenPecentOff;
+
+    console.log(`current price of the item = ${currentPrice} and after the discount of 10% the updated price is ${itemPrice[i]}`) ;
+
+}
+
+console.log(itemPrice);
+
+
+
+console.log("****************************----Arrays and it's method------>CP5x");
+
+
+let foodItems = [2,4,5,6,3,7,9,10];
+foodItems.push(20);
+console.log(` array.push will add the eleemt into the end of the arrays ${foodItems}`);
+console.log(foodItems);
+
+
+foodItems.push(210,213,2413,432,5,246,34,634,63);
+console.log(foodItems);
+
+
+
+// pop detlees the last item;
+
+let deletedItem = foodItems.pop();
+console.log(`deleted item is ${deletedItem}`)
+console.log(foodItems);
+
+console.log(foodItems.toString());
+
+console.log(typeof(foodItems.toString()));
+
+
+
+let marvel = ["Thor", "spiderMan", "IronMan"];
+let dc =["superman", "Batman"];
+let indianHeros = ["krish", "Shaktiman"];
+
+let hearosInBoth = marvel.concat(dc, indianHeros);
+console.log(hearosInBoth);
+
+
+marvel.unshift("Akshat");
+console.log(marvel);
+console.log("****************************----Arrays and it's method------>CP6x");
+
+let deletedHerosFromMarvel = marvel.shift();
+condition1.length("deleted", deletedHerosFromMarvel);
