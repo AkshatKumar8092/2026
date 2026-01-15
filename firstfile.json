@@ -1,0 +1,23 @@
+[
+    {
+        "name": "John Doe",
+        "age": 28,
+        "email": "john@example.com",
+        "isStudent": false,
+        "hobbies": [
+            "reading",
+            "gaming",
+            "cooking"
+        ],
+        "address": {
+            "street": "123 Main St",
+            "city": "New York",
+            "zipCode": "10001"
+        },
+        "grades": {
+            "math": 95,
+            "science": 88,
+            "english": 92
+        }
+    }
+]
