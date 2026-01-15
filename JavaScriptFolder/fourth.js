@@ -155,4 +155,24 @@ console.log(marvel);
 console.log("****************************----Arrays and it's method------>CP6x");
 
 let deletedHerosFromMarvel = marvel.shift();
-condition1.length("deleted", deletedHerosFromMarvel);
+console.log("deleted", deletedHerosFromMarvel);
+
+
+console.log("****************************----Arrays video end excercise------>CP6x");
+
+
+let companies= ["microsoft", "Apple", "Google", "Facebook","Meta","netfix","IBM", "uber"];
+let removedComapnies = companies.shift()
+console.log(`delted idem is ${removedComapnies}`);
+
+
+for(let i = 0; i<companies.length; i++){
+    if(companies[i] === "uber"){
+        companies[i] = "old";
+    }
+}
+
+console.log(companies);
+
+companies.push("Amazon");
+console.log(companies);
