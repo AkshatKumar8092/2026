@@ -203,8 +203,130 @@ let calcSq = (element)=>{
 }
 int.forEach(calcSq);
 
-
+console.log("****************************----functions for-map method------>CP5x");
 
 // map method
 // create a new array with the results of some operations. the value its callback returns are used to form a new array
 
+
+let newArr = int.map((val)=>{
+    return val**2;
+})
+console.log(newArr);
+
+
+
+console.log("****************************----functions for-filter method------>CP6x");
+
+let arrEven = [1,2,3,4,5,56,6,47,67,536,45,24,23,5434,6,346,45,745,41112]
+
+let newArray = arrEven.filter((val)=>{
+    return val%2 !==0;
+});
+
+
+let newArrayDviBy3 = arrEven.filter((val)=>{
+    return val>3000;
+});
+
+
+console.log(newArrayDviBy3);
+
+
+console.log(newArray);
+
+
+
+let myArray = [1,2,3,4];
+
+let output = myArray.reduce((previous , current)=>{
+    return previous+current;
+});
+
+
+console.log(`output is ${output}`); 
+
+
+let maxVal = myArray.reduce((previous, currentVal)=>{
+    return previous>currentVal?previous:currentVal;
+});
+
+console.log(maxVal);
+
+
+
+let smallVal = myArray.reduce((previous, currentVal)=>{
+    return previous<currentVal?previous:currentVal;
+});
+
+console.log(smallVal);
+
+
+
+
+
+console.log("****************************----functions Practice Excercise------>CP6x");
+
+let myAr = [12,3,21,1,43,2,42,35,43,44, 99,92, 1020];
+
+
+let ans1 = myAr.filter((value)=>{
+    return value > 90
+});
+
+console.log(`ans1 is ${ans1}`);
+
+
+let gameRun = false;
+if(gameRun){
+    let userValue = prompt("enter the value");
+
+    let userArray = [];
+    let MarksArray = [];
+
+    for(let i= 1; i<parseInt(userValue)+1; i++){
+        userArray[i-1] = i;
+        MarksArray[i-1]=Math.random()*100;
+    }
+
+    console.log(userArray,"somethin1");
+    console.log(MarksArray,"somethin2");
+
+
+    let ans1X = userArray.reduce((resut, p)=>{
+        return resut+p;
+    });
+    console.log(`game answer1 is ${ans1X}`);
+
+
+
+    let ans2X= userArray.reduce((currentValue, previousValue)=>{
+        return currentValue*previousValue;
+    });
+    console.log(`game answer2 is ${ans2X}`);
+
+
+    // Q1 using game
+    // corect
+    let ans3X = MarksArray.filter((currentVlaue)=>{
+        return currentVlaue>90;
+    })
+
+    console.log(`game answer3 q1 is ${ans3X}`);
+} 
+
+
+let ans2 = myAr.reduce((p, c)=>{
+    return p+c;
+});
+
+console.log(`ans2 is ${ans2}`);
+
+
+
+let ans3 = myAr.reduce((cv, pv)=>{
+    return cv*pv;
+});
+
+
+console.log(`ans3 is ${ans3}`);
