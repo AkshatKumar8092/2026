@@ -1,0 +1,29 @@
+h1 {
+    color: red;
+    text-decoration: line-through;
+    background-color: yellow;
+}
+
+
+body {
+    background-color: cyan;
+}
+
+button {
+    background-color: burlywood;
+    color: green;
+}
+
+#heading {
+    color: white
+}
+
+#head2 {
+    text-decoration: line-through;
+    background-color: violet;
+}
+
+.headingP{
+
+    border: 10px solid rgb(179, 0, 255);
+}
