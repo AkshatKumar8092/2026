@@ -50,7 +50,7 @@ let winPatterns = [
 
 boxex.forEach((box) => {
     box.addEventListener("click", () => {
-        console.log("Box was Clicked");
+        // //console.log("Box was Clicked");
         if (turnO) {
             //player o
             box.innerText = "X";
@@ -75,13 +75,13 @@ const chekcWinner = () => {
     for (let pattern of winPatterns) {
 
 
-        // console.log(pattern[0],pattern[1],pattern[2]);
+        // //console.log(pattern[0],pattern[1],pattern[2]);
 
 
-        // // console.log(boxex[pattern[0]],boxex[pattern[1]],boxex[pattern[2]]);
+        // // //console.log(boxex[pattern[0]],boxex[pattern[1]],boxex[pattern[2]]);
 
 
-        // console.log(
+        // //console.log(
         //     boxex[pattern[0].innerText],
         //     boxex[pattern[1].innerText],
         //     boxex[pattern[2].innerText]
@@ -94,8 +94,8 @@ const chekcWinner = () => {
 
         if (pos1Val != "" && pos2Val != "" && pos3Val != "") {
             if (pos1Val === pos2Val && pos2Val === pos3Val) {
-                // (turnO)?console.log("Winner is O"):console.log("Winner is X");
-                console.log(`winner is ${pos1Val}`);
+                // (turnO)?//console.log("Winner is O")://console.log("Winner is X");
+                // //console.log(`winner is ${pos1Val}`);
 
 
                 
